@@ -4,7 +4,7 @@ document.getElementById('anamneseForm').addEventListener('submit', async functio
   const dados = Object.fromEntries(formData.entries());
 
   // Envio para o Google Apps Script
-  const scriptURL = https://script.google.com/macros/s/AKfycbz3k54uqHQ2GdlTadt2xycPW4lsekInr14x1vsTESL93ZrEEqlGhPpugUQmQl9YiEuCkw/exec;
+  const scriptURL = https://script.google.com/macros/s/AKfycbzZAsl-TNcIlQnjrd6e9oX0Z9-lymW7xVnbdVyRrOL9nTs7qXffY0GztufRZewGjA0Eng/exec;
   
   const response = await fetch(scriptURL, {
     method: 'POST',
