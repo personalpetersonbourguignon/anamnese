@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anamnese - Peterson Bourguignon Personal Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Peterson Bourguignon" class="logo" />
+    <h1>Consultoria Online - Anamnese</h1>
+  </header>
+
+  <main class="container">
+    <p>Preencha o formulário com o máximo de detalhes para que seu plano de treino seja totalmente personalizado.</p>
+
+    <form id="anamneseForm">
+      <!-- Seções completas da anamnese -->
+      <!-- 1. Dados Pessoais -->
+      <fieldset>
+        <legend>1. Dados Pessoais</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+          <option value="">Selecione</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+          <option value="naoInformar">Prefiro não informar</option>
+        </select>
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" name="altura" required>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.1" required>
+
+        <label for="profissao">Profissão e Rotina de Trabalho:</label>
+        <textarea id="profissao" name="profissao" rows="2" placeholder="Ex: Desenvolvedor, rotina sentada 8h/dia" required></textarea>
+      </fieldset>
+
+      <!-- 2. Saúde e Histórico Médico -->
+      <fieldset>
+        <legend>2. Saúde e Histórico Médico</legend>
+        <label for="doencaCronica">Doença crônica:</label>
+        <textarea id="doencaCronica" name="doencaCronica"></textarea>
+
+        <label for="medicamentos">Uso de medicamentos:</label>
+        <textarea id="medicamentos" name="medicamentos"></textarea>
+
+        <label for="lesao">Lesões:</label>
+        <textarea id="lesao" name="lesao"></textarea>
+
+        <label for="doresAtuais">Dores atuais (local e intensidade):</label>
+        <textarea id="doresAtuais" name="doresAtuais"></textarea>
+
+        <label for="cirurgia">Cirurgias anteriores:</label>
+        <textarea id="cirurgia" name="cirurgia"></textarea>
+
+        <label for="alergias">Alergias:</label>
+        <textarea id="alergias" name="alergias"></textarea>
+
+        <label>Gestante ou amamentando:</label>
+        <div>
+          <input type="radio" id="gravidaSim" name="gravidez" value="Sim">
+          <label for="gravidaSim">Sim</label>
+          <input type="radio" id="gravidaNao" name="gravidez" value="Não">
+          <label for="gravidaNao">Não</label>
+        </div>
+
+        <label for="sono">Qualidade do sono:</label>
+        <textarea id="sono" name="sono"></textarea>
+      </fieldset>
+
+      <!-- 3. Hábitos de Vida -->
+      <fieldset>
+        <legend>3. Hábitos de Vida</legend>
+        <label>Você fuma?</label>
+        <div>
+          <input type="radio" id="fumaSim" name="fuma" value="Sim">
+          <label for="fumaSim">Sim</label>
+          <input type="radio" id="fumaNao" name="fuma" value="Não">
+          <label for="fumaNao">Não</label>
+        </div>
+
+        <label for="alcool">Consumo de bebidas alcoólicas:</label>
+        <input type="text" id="alcool" name="alcool">
+
+        <label for="hidratacao">Hidratação diária:</label>
+        <input type="text" id="hidratacao" name="hidratacao">
+
+        <label for="alimentacao">Como é sua alimentação atual?</label>
+        <textarea id="alimentacao" name="alimentacao"></textarea>
+
+        <label for="dietaRestricoes">Dieta/restrições alimentares:</label>
+        <textarea id="dietaRestricoes" name="dietaRestricoes"></textarea>
+      </fieldset>
+
+      <!-- 4. Histórico de Atividade Física -->
+      <fieldset>
+        <legend>4. Histórico de Atividade Física</legend>
+        <label for="atividadesPassadas">Atividades já praticadas:</label>
+        <textarea id="atividadesPassadas" name="atividadesPassadas"></textarea>
+
+        <label for="frequenciaTreinoPassado">Frequência semanal:</label>
+        <input type="text" id="frequenciaTreinoPassado" name="frequenciaTreinoPassado">
+
+        <label for="experienciaForca">Experiência com musculação:</label>
+        <select id="experienciaForca" name="experienciaForca">
+          <option value="">Selecione</option>
+          <option value="Iniciante">Iniciante</option>
+          <option value="Intermediário">Intermediário</option>
+          <option value="Avançado">Avançado</option>
+        </select>
+
+        <label for="experienciaAerobico">Experiência com aeróbico:</label>
+        <select id="experienciaAerobico" name="experienciaAerobico">
+          <option value="">Selecione</option>
+          <option value="Iniciante">Iniciante</option>
+          <option value="Intermediário">Intermediário</option>
+          <option value="Avançado">Avançado</option>
+        </select>
+
+        <label for="exercicioNaoGosta">Exercícios que não gosta:</label>
+        <textarea id="exercicioNaoGosta" name="exercicioNaoGosta"></textarea>
+      </fieldset>
+
+      <!-- 5. Objetivos e Expectativas -->
+      <fieldset>
+        <legend>5. Objetivos e Expectativas</legend>
+        <label for="objetivoPrincipal">Principal objetivo:</label>
+        <textarea id="objetivoPrincipal" name="objetivoPrincipal"></textarea>
+
+        <label for="tempoResultados">Prazo para primeiros resultados:</label>
+        <input type="text" id="tempoResultados" name="tempoResultados">
+
+        <label for="diasSemanaTreino">Dias disponíveis para treino:</label>
+        <input type="number" id="diasSemanaTreino" name="diasSemanaTreino" min="1" max="7">
+
+        <label for="duracaoTreino">Duração ideal do treino:</label>
+        <input type="text" id="duracaoTreino" name="duracaoTreino">
+
+        <label for="localTreino">Local de treino:</label>
+        <input type="text" id="localTreino" name="localTreino">
+
+        <label for="equipamentos">Equipamentos disponíveis:</label>
+        <textarea id="equipamentos" name="equipamentos"></textarea>
+
+        <label for="motivacao">O que te motiva a treinar:</label>
+        <textarea id="motivacao" name="motivacao"></textarea>
+
+        <label for="desmotivacao">O que te desmotiva:</label>
+        <textarea id="desmotivacao" name="desmotivacao"></textarea>
+
+        <label>Enviará vídeos para feedback?</label>
+        <div>
+          <input type="radio" id="videosSim" name="enviarVideos" value="Sim">
+          <label for="videosSim">Sim</label>
+          <input type="radio" id="videosNao" name="enviarVideos" value="Não">
+          <label for="videosNao">Não</label>
+        </div>
+      </fieldset>
+
+      <!-- 6. Observações Adicionais -->
+      <fieldset>
+        <legend>6. Observações Adicionais</legend>
+        <label for="observacoes">Informações complementares:</label>
+        <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+      </fieldset>
+
+      <button type="submit" class="btn-enviar">Enviar Anamnese</button>
+    </form>
+
+    <div id="mensagem" class="mensagem-oculta">✅ Anamnese enviada com sucesso! Você receberá confirmação por e-mail.</div>
+  </main>
+
+  <footer>
+    <p>© 2025 Peterson Bourguignon | Personal Trainer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
