@@ -16,12 +16,13 @@
     <p>Preencha o formulário com o máximo de detalhes para que seu plano de treino seja totalmente personalizado.</p>
 
     <form id="anamneseForm">
-      <!-- Seções completas da anamnese -->
+
       <!-- 1. Dados Pessoais -->
       <fieldset>
         <legend>1. Dados Pessoais</legend>
+
         <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" required placeholder="Ex: João da Silva Souza">
 
         <label for="dataNascimento">Data de Nascimento:</label>
         <input type="date" id="dataNascimento" name="dataNascimento" required>
@@ -36,35 +37,36 @@
         </select>
 
         <label for="altura">Altura (cm):</label>
-        <input type="number" id="altura" name="altura" required>
+        <input type="number" id="altura" name="altura" required placeholder="Ex: 175">
 
         <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" name="peso" step="0.1" required>
+        <input type="number" id="peso" name="peso" step="0.1" required placeholder="Ex: 78.5">
 
         <label for="profissao">Profissão e Rotina de Trabalho:</label>
-        <textarea id="profissao" name="profissao" rows="2" placeholder="Ex: Desenvolvedor, rotina sentada 8h/dia" required></textarea>
+        <textarea id="profissao" name="profissao" rows="2" required placeholder="Ex: Desenvolvedor, rotina sentada 8h/dia"></textarea>
       </fieldset>
 
       <!-- 2. Saúde e Histórico Médico -->
       <fieldset>
         <legend>2. Saúde e Histórico Médico</legend>
+
         <label for="doencaCronica">Doença crônica:</label>
-        <textarea id="doencaCronica" name="doencaCronica"></textarea>
+        <textarea id="doencaCronica" name="doencaCronica" placeholder="Ex: Hipertensão controlada, Diabetes tipo 2"></textarea>
 
         <label for="medicamentos">Uso de medicamentos:</label>
-        <textarea id="medicamentos" name="medicamentos"></textarea>
+        <textarea id="medicamentos" name="medicamentos" placeholder="Ex: Losartana, Metformina"></textarea>
 
         <label for="lesao">Lesões:</label>
-        <textarea id="lesao" name="lesao"></textarea>
+        <textarea id="lesao" name="lesao" placeholder="Ex: Dor no ombro direito ao levantar peso"></textarea>
 
         <label for="doresAtuais">Dores atuais (local e intensidade):</label>
-        <textarea id="doresAtuais" name="doresAtuais"></textarea>
+        <textarea id="doresAtuais" name="doresAtuais" placeholder="Ex: Lombar, intensidade 5/10"></textarea>
 
         <label for="cirurgia">Cirurgias anteriores:</label>
-        <textarea id="cirurgia" name="cirurgia"></textarea>
+        <textarea id="cirurgia" name="cirurgia" placeholder="Ex: Apendicectomia em 2010"></textarea>
 
         <label for="alergias">Alergias:</label>
-        <textarea id="alergias" name="alergias"></textarea>
+        <textarea id="alergias" name="alergias" placeholder="Ex: Amendoim, Dipirona"></textarea>
 
         <label>Gestante ou amamentando:</label>
         <div>
@@ -75,12 +77,13 @@
         </div>
 
         <label for="sono">Qualidade do sono:</label>
-        <textarea id="sono" name="sono"></textarea>
+        <textarea id="sono" name="sono" placeholder="Ex: Durmo 6h por noite, acordo 1x"></textarea>
       </fieldset>
 
       <!-- 3. Hábitos de Vida -->
       <fieldset>
         <legend>3. Hábitos de Vida</legend>
+
         <label>Você fuma?</label>
         <div>
           <input type="radio" id="fumaSim" name="fuma" value="Sim">
@@ -90,26 +93,27 @@
         </div>
 
         <label for="alcool">Consumo de bebidas alcoólicas:</label>
-        <input type="text" id="alcool" name="alcool">
+        <input type="text" id="alcool" name="alcool" placeholder="Ex: Socialmente, 1x por semana">
 
         <label for="hidratacao">Hidratação diária:</label>
-        <input type="text" id="hidratacao" name="hidratacao">
+        <input type="text" id="hidratacao" name="hidratacao" placeholder="Ex: 2 litros por dia">
 
         <label for="alimentacao">Como é sua alimentação atual?</label>
-        <textarea id="alimentacao" name="alimentacao"></textarea>
+        <textarea id="alimentacao" name="alimentacao" placeholder="Ex: Café da manhã leve, almoço equilibrado, janta com fast-food nos fins de semana"></textarea>
 
         <label for="dietaRestricoes">Dieta/restrições alimentares:</label>
-        <textarea id="dietaRestricoes" name="dietaRestricoes"></textarea>
+        <textarea id="dietaRestricoes" name="dietaRestricoes" placeholder="Ex: Vegetariano, intolerante à lactose"></textarea>
       </fieldset>
 
       <!-- 4. Histórico de Atividade Física -->
       <fieldset>
         <legend>4. Histórico de Atividade Física</legend>
+
         <label for="atividadesPassadas">Atividades já praticadas:</label>
-        <textarea id="atividadesPassadas" name="atividadesPassadas"></textarea>
+        <textarea id="atividadesPassadas" name="atividadesPassadas" placeholder="Ex: Musculação por 2 anos, corrida por 6 meses"></textarea>
 
         <label for="frequenciaTreinoPassado">Frequência semanal:</label>
-        <input type="text" id="frequenciaTreinoPassado" name="frequenciaTreinoPassado">
+        <input type="text" id="frequenciaTreinoPassado" name="frequenciaTreinoPassado" placeholder="Ex: 3 a 4 vezes por semana">
 
         <label for="experienciaForca">Experiência com musculação:</label>
         <select id="experienciaForca" name="experienciaForca">
@@ -128,35 +132,36 @@
         </select>
 
         <label for="exercicioNaoGosta">Exercícios que não gosta:</label>
-        <textarea id="exercicioNaoGosta" name="exercicioNaoGosta"></textarea>
+        <textarea id="exercicioNaoGosta" name="exercicioNaoGosta" placeholder="Ex: Agachamento com barra, corrida longa"></textarea>
       </fieldset>
 
       <!-- 5. Objetivos e Expectativas -->
       <fieldset>
         <legend>5. Objetivos e Expectativas</legend>
+
         <label for="objetivoPrincipal">Principal objetivo:</label>
-        <textarea id="objetivoPrincipal" name="objetivoPrincipal"></textarea>
+        <textarea id="objetivoPrincipal" name="objetivoPrincipal" placeholder="Ex: Ganhar massa muscular e reduzir gordura abdominal"></textarea>
 
         <label for="tempoResultados">Prazo para primeiros resultados:</label>
-        <input type="text" id="tempoResultados" name="tempoResultados">
+        <input type="text" id="tempoResultados" name="tempoResultados" placeholder="Ex: 3 meses">
 
         <label for="diasSemanaTreino">Dias disponíveis para treino:</label>
-        <input type="number" id="diasSemanaTreino" name="diasSemanaTreino" min="1" max="7">
+        <input type="number" id="diasSemanaTreino" name="diasSemanaTreino" min="1" max="7" placeholder="Ex: 4">
 
         <label for="duracaoTreino">Duração ideal do treino:</label>
-        <input type="text" id="duracaoTreino" name="duracaoTreino">
+        <input type="text" id="duracaoTreino" name="duracaoTreino" placeholder="Ex: 45-60 minutos">
 
         <label for="localTreino">Local de treino:</label>
-        <input type="text" id="localTreino" name="localTreino">
+        <input type="text" id="localTreino" name="localTreino" placeholder="Ex: Academia do prédio ou em casa">
 
         <label for="equipamentos">Equipamentos disponíveis:</label>
-        <textarea id="equipamentos" name="equipamentos"></textarea>
+        <textarea id="equipamentos" name="equipamentos" placeholder="Ex: Halteres de 5kg, elásticos, colchonete"></textarea>
 
         <label for="motivacao">O que te motiva a treinar:</label>
-        <textarea id="motivacao" name="motivacao"></textarea>
+        <textarea id="motivacao" name="motivacao" placeholder="Ex: Melhorar a saúde e estética corporal"></textarea>
 
         <label for="desmotivacao">O que te desmotiva:</label>
-        <textarea id="desmotivacao" name="desmotivacao"></textarea>
+        <textarea id="desmotivacao" name="desmotivacao" placeholder="Ex: Falta de tempo, rotina cansativa"></textarea>
 
         <label>Enviará vídeos para feedback?</label>
         <div>
@@ -171,7 +176,7 @@
       <fieldset>
         <legend>6. Observações Adicionais</legend>
         <label for="observacoes">Informações complementares:</label>
-        <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Ex: Treino à noite, histórico de hérnia de disco, preferência por exercícios livres"></textarea>
       </fieldset>
 
       <button type="submit" class="btn-enviar">Enviar Anamnese</button>
